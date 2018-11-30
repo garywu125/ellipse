@@ -1,6 +1,7 @@
 package ellipse
 
 import (
+	"fmt"
 	"math"
 
 	"github.com/garywu125/ellipse/hello"
@@ -13,6 +14,7 @@ type Init struct {
 
 // Get Eccentricity of Ellipse
 func (e *Init) GetEccentricity() float64 {
+	fmt.Println("version v0.1.2")
 	return (math.Sqrt(math.Pow(e.A, 2) - math.Pow(e.B, 2))) / e.A
 }
 
